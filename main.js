@@ -13,3 +13,53 @@ var planets = [
     ['Sun', 27.9]
 ];
 
+// We are going to  solve this by breaking the problem into three parts.
+// Programmers like automating things, we'll populate the HTML drop down options using code,
+// instead of having to type out all the values.
+// Create a function that does the some math and gives us the new weight.
+// Then create a function that responds when the user clicks on the button.
+
+// 1. Populate the dropdown element with the data found in the planets array.
+// The value of each option should be the planet's name.
+// Use the following built-in methods:
+// 'forEach' 'document.createElement' 'document.getElementById' '.appendChild'
+const parentMenu = document.getElementById("planets");
+planets.forEach(function(planetName){
+    const option = document.createElement("option");
+    option.value = planetName[0];
+    option.textContent = planetName[0];
+    parentMenu.appendChild(option);
+});
+
+function calculateWeight(weight, planetName) {
+    // 2. Write the code to return the correct weight
+    const planetMultiplier = planets.find(planet => planet[0] === planetName);
+    if (planetMultiplier) {
+        const multiplier = planetMultiplier[1];
+        return weight *multiplier;
+    }
+    return 0;
+   
+}
+
+function handleClickEvent(e) {
+    // 3. Declare a variable called userWeight and assign the value of the user's weight.
+    const weightField = document.getElementById("user-weight");
+    var userWeight = Number(weightField.value);
+    // 4. Declare a variable called planetName and assign the name of the selected planet from the drop down.
+    const planetField = document.getElementById("planets");
+    var planetName = planetField.value;
+    // 5. Declare a variable called result and assign the value of the new calculated weight.
+    var result = calculateWeight(userWeight, planetName);
+
+    // 6. Write code to display the message shown in the screenshot.
+    document.getElementById("output").innerHTML = `If you were on ${planetName}, you would weigh ${result.toFixed(2)}lbs!`;
+}
+
+// 7. Set the #calculate-button element's onclick method to use the handleClickEvent function.
+// 8. Make it look nice by attaching a style.css file to your index.html and writing some basic styling,
+// feel free to add classes and id's to the HTML elements as you need,
+// import a google font and use it for some or all of the text on your page.
+
+//Bonus Challenges
+// 8. Reverse the drop down order so that the sun is first.

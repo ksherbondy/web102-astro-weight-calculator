@@ -1,0 +1,35 @@
+body {
+    background-image: url('./assets/space.jpg');
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    color:ivory;
+    text-decoration: darkolivegreen;
+}
+
+button {
+    background-color:ivory;
+    border-radius:3em;
+    font-size: large;
+    padding:10px 20px;
+}
+
+select {
+    border-radius:3em;
+    background-color: ivory;
+    font-size: large;
+    padding:10px 20px;
+}
+input {
+    border-radius: 3em;
+    background-color: ivory;
+    font-size:large;
+    padding:10px 20px;
+
+}
+footer p {
+    color: ivory;
+    font-size: samll;
+}

@@ -26,15 +26,22 @@
     <h1>Astro Weight Calculator</h1>
    </header>
   </section>
-
-  <label for="user-weight">Enter your weight </label>
+  <section >
+  <div class="flex">
+  <label id="weight-label" for="user-weight">Enter your weight </label>
+  <label id="planet-label" for="planets">Select a planet</label>
+  </div>
+  <div class="flex">
   <input id="user-weight" type="text" placeholder="Weight (lbs)"/>
-  <label for="planets">Select a planet</label>
+ 
   <select id="planets">
 
   </select>
-
+</div>
+<div class="flex">
 <button id="calculate-button" onclick="handleClickEvent()">Calculate!</button>
+</section>
+</div>
 <p id="output"></p>
 <footer>
   <p>Creating Coding Careers Course Web 102</p>

@@ -17,10 +17,10 @@ The following are based on the project specifications outlined in Creating Codin
 ## DONE
 
 - [x] Create Wireframe
-- [x] Add <input> element with an id of "user-weight"
-- [x] Add <select> element with an id of "planets"
-- [x] Add <button> element with an id of "calculate-button"
-- [x] Add <p> element with an id of "output"
+- [x] Add <input> element with an id of "user-weight".
+- [x] Add <select> element with an id of "planets".
+- [x] Add <button> element with an id of "calculate-button".
+- [x] Add <p> element with an id of "output".
 - [x] Create function that populates the dropdown element from data in planet array
 - [x] Use .forEach, document.createElement, document.getElementById, and .appendChild
 - [x] Create calculateWeight function to return the users weight depending on planet selection

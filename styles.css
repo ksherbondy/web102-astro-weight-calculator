@@ -4,17 +4,25 @@
   font-style: normal;
 }
 
+p {
+    font-family: audiowide;
+    text-align: center;
+    color: ivory;
+}
 
 body {
     background-image: url('./assets/background.jpg');
     background-size: cover;
+    font-family: audiowide;
 }
 
-h1 {
+header {
     font-family: audiowide;
     text-align: center;
     color:ivory;
     text-decoration: darkolivegreen;
+    margin-bottom: 5rem;
+    margin-top:3rem;
 }
 
 button {
@@ -23,6 +31,8 @@ button {
     font-size: large;
     padding:10px 20px;
 }
+
+
 
 select {
     border-radius:3em;
@@ -37,8 +47,15 @@ input {
     padding:10px 20px;
 
 }
-footer p {
+footer {
     font-family: audiowide;
     color: ivory;
     font-size: samll;
+    margin-top: 25em;
+}
+
+label {
+    font-family: audiowide;
+    color: ivory;
+
 }

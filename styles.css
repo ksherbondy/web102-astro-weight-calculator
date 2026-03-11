@@ -1,9 +1,17 @@
+.audiowide-regular {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 body {
-    background-image: url('./assets/space.jpg');
+    background-image: url('./assets/background.jpg');
     background-size: cover;
 }
 
 h1 {
+    font-family: audiowide;
     text-align: center;
     color:ivory;
     text-decoration: darkolivegreen;
@@ -30,6 +38,7 @@ input {
 
 }
 footer p {
+    font-family: audiowide;
     color: ivory;
     font-size: samll;
 }

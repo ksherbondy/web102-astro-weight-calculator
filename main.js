@@ -63,3 +63,10 @@ function handleClickEvent(e) {
 
 //Bonus Challenges
 // 8. Reverse the drop down order so that the sun is first.
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+   
+   const button = document.querySelector('button');
+   button.textContent = button.textContent === 'Dark Mode' ? 'Light Mode' : 'Dark Mode';
+}

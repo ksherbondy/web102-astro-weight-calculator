@@ -15,9 +15,14 @@ p {
 }
 
 body {
-    background-image: url('./assets/background.jpg');
+    background-image: url('./assets/background-light.png');
     background-size: cover;
     font-family: audiowide;
+    transition: background-image 0.3s ease;
+}
+
+.dark-mode {
+    background-image: url('./assets/background-dark.png');
 }
 
 header {

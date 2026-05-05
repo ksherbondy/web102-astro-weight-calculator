@@ -15,15 +15,17 @@ p {
 }
 
 body {
-    background-image: url('./assets/background-light.png');
+    background-image: url('/assets/background-light.png');
     background-size: cover;
     font-family: audiowide;
     transition: background-image 0.3s ease;
 }
 
 .dark-mode {
-    background-image: url('./assets/background-dark.png');
+    background-image: url('../assets/background-dark.png');
 }
+
+
 
 header {
     font-family: audiowide;
@@ -57,6 +59,10 @@ input {
 
 }
 footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
     font-family: audiowide;
     color: ivory;
     font-size: samll;
@@ -93,4 +99,22 @@ label {
     justify-content: center;
     align-items: center;
     height:auto;
+}
+
+.social-icons {
+    width: 20px;
+}
+.social-icons-container {
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    gap: 1.5rem;
+}
+
+#output-container p {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(30px);
+}
+
+ul {
+    list-style: none;
 }

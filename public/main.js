@@ -54,6 +54,9 @@ function handleClickEvent(e) {
 
     // 6. Write code to display the message shown in the screenshot.
     document.getElementById("output").innerHTML = `If you were on ${planetName}, you would weigh ${result.toFixed(2)}lbs!`;
+    let image = document.getElementById("output-planet");
+    image.src = "./assets/earth.png";
+    image.alt = "Image of earth.";
 }
 
 // 7. Set the #calculate-button element's onclick method to use the handleClickEvent function.
@@ -67,6 +70,6 @@ function myFunction() {
    var element = document.body;
    element.classList.toggle("dark-mode");
    
-   const button = document.querySelector('button');
+   const button = document.getElementById("theme-toggle");
    button.textContent = button.textContent === 'Dark Mode' ? 'Light Mode' : 'Dark Mode';
 }
